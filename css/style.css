@@ -8,6 +8,7 @@ body {
     background-image: url(/images/map.png);
     background-size: 393px 852px;
     background-repeat: no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 /* Top Nav */
@@ -25,10 +26,10 @@ body {
     width: 50px;
     appearance: none;
     cursor: pointer;
-    padding-top: 25px;
     background: none;
     outline: none;
     border: none;
+    z-index: 100;
   }
   
   .hamburger .bar, .hamburger:after, .hamburger:before {
@@ -43,9 +44,11 @@ body {
   
   .hamburger.is-active:before {
     transform: rotate(-45deg) translate(-5px, 5px);
+    background-color: #ffffff;
   }
   .hamburger.is-active:after {
     transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #ffffff;
   }
   
   .hamburger.is-active .bar {
@@ -56,11 +59,11 @@ body {
     z-index: 98;
     display: block;
     position: fixed;
-    top: 78px;
+    top: 0px;
     left: 100%;
     width: 100%;
-    min-height: 100vh;
-    background-color: #ffffff;
+    min-height: 61vh; /* previously 100vh */
+    background-color: #7836F1;
     padding-top: 120px;
     transition: 0.4s;
   }
@@ -73,10 +76,17 @@ body {
       display: block;
       width: 100%;
       max-width: 200px;
-      margin: 0 auto 16px;
+      margin: 0 auto 0px;
       text-align: center;
       padding: 12px 12px;
-      background-color: #ffffff;
+      background-color: #7836F1;
+      font-family: 'Kumbh Sans', sans-serif;
+      color: #ffffff;
+      font-weight: 900;
+      text-decoration: none;
+    }
+    .mobile-nav a:hover {
+        background-color: rgba(96, 55, 219, 50);
     }
 
 
