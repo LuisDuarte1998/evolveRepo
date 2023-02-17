@@ -1,0 +1,20 @@
+/*iframe {
+    background-image: url(images/Map.png);
+}
+		iframe {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 393px;
+			height: 852px;
+			border: none;
+		}
+*/
+
+@media (max-width: 390px) {
+/* all css happens here*/
+
+
+
+}
