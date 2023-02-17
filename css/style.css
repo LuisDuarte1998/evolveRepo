@@ -1,6 +1,4 @@
-/*iframe {
-    background-image: url(images/Map.png);
-}
+/*
 		iframe {
 			position: fixed;
 			top: 50%;
@@ -14,7 +12,9 @@
 
 @media (max-width: 390px) {
 /* all css happens here*/
-
+body {
+    background-color: black;
+}
 
 
 }
