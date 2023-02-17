@@ -89,5 +89,221 @@ body {
         background-color: rgba(96, 55, 219, 50);
     }
 
+    /* cards */
+    .stationScroll { /* changed from # for js */
+      display: block;
+     /* flex-direction: column;
+      align-items: flex-end;
+      padding: 0; */
+      position: absolute;
+      top: 720px; /* adjust to position */
+      left: 12px; /*adjust to position */
+      z-index: 1;
+      width: 270px;
+      height: 100px;
+      background-color: #ffffff;
+      padding: 8px;
+      border-top: #7836F1 solid 5px;
+    }
 
+    .scrollTitle {
+      font-family: 'Kumbh Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .scrolltopLine {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 8px;
+      gap: 116px;
+
+    }
+
+    .scrollrow {
+      display: flex;
+      /*justify-content: space-between;*/
+      align-items: center;
+      align-self: stretch;
+      height: 36px;
+      padding-top: 16px;
+    }
+
+.scrolladdress {
+  width: 200px;
+}
+
+.btn-nav img {
+  padding-left: 25px;
+}
+
+
+
+
+    .card { /* changed from # for js */
+      display: none;
+     /* flex-direction: column;
+      align-items: flex-end;
+      padding: 0; */
+      position: absolute;
+      top: 375px; /* adjust to position */
+      left: 66px; /*adjust to position */
+      z-index: 1;
+      width: 274px;
+      height: 94px;
+      background-color: #ffffff;
+      padding: 8px;
+    }
+
+    .card1 { /* changed from # for js */
+      display: none;
+     /* flex-direction: column;
+      align-items: flex-end;
+      padding: 0; */
+      position: absolute;
+      top: 125px; /* adjust to position */
+      left: 70px; /*adjust to position */
+      z-index: 1;
+      width: 274px;
+      height: 94px;
+      background-color: #ffffff;
+      padding: 8px;
+    }
+
+    .card1 .btn {
+      background-color: darkgrey;
+
+    }
+
+    .card2 { /* changed from # for js */
+      display: none;
+     /* flex-direction: column;
+      align-items: flex-end;
+      padding: 0; */
+      position: absolute;
+      top: 408px !important; /* adjust to position */
+      left: 18px !important; /*adjust to position */
+      z-index: 1;
+      width: 274px;
+      height: 94px;
+      background-color: #ffffff;
+      padding: 8px;
+    }
+    
+    #card.show {
+      display: block;
+
+    }
+
+    .show-card {
+      background: none;
+      border: none;
+      position: relative;
+      z-index: 2;
+
+    }
+
+    .show-card img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .cardtopLine {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      gap: 136px;
+
+    }
+
+    .cardTitle {
+      font-family: 'Kumbh Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 21px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .cardAvail {
+      color: #7836f1;
+      font-size: 14px;
+      font-weight: 800;
+      font-family: 'Kumbh Sans', sans-serif;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .ratingStars {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2px;
+    }
+
+     .stationStars {
+     display: flex; 
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+    }
+
+    /* Card Button */
+
+    .btn {
+      background-color: #6037db;
+      color: #ffffff;
+      font-size: 1em;
+      padding: 10px 20px;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+   .btn-go {
+      width: 96px;
+      height: 36px;
+      background-color: #6037DB;
+  
+    }
+
+    .btn-go a {
+      color: #ffffff;
+      font-weight: 700;
+      font-family: 'Kumbh Sans', sans-serif;
+      font-size: 16px;
+      align-content: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 36px;
+      padding-top: 10px;
+    }
+
+    .row p {
+      font-weight: 400;
+      font-family: 'Kumbh Sans', sans-serif;
+      font-style: normal;
+      font-size: 16px;
+      margin: 0;
+      padding-top: 6px;
+      line-height: 20px;
+    }
+
+    .address {
+      flex: 1;
+    }
 }
