@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/filter_style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+        
+    <title>Document</title>
+</head>
+<body>
+        <div class="sections_button_holder">
+            <button id="filterButton" onclick="toggleFilterPanel('filter_panel')"></button>
+        </div>
+        <div id="filter_panel" style="height: 810px;">
+            <!--title header with cancel button-->
+            <div id="top_container">
+                <h1>Filters</h1>
+                <button id="cancel-toggle">Cancel</button>
+            </div>
+            <!--search bar-->>
+            <div id="search_container">
+                <input type="text" placeholder="Search">
+            </div>
+            <hr>
+            <div id="filter_container">
+                <!--availability drop down-->
+                <div id="av_container">
+                    <button class="filters" id="Availability" onclick="toggleAvPanel('av_panel')">Availability</button>
+                    <hr>
+                    <div id="av_panel">
+                        <button class="filter_toggle" id="unavailable">Unavailable</button>
+                        <button class="filter_toggle" id="available">Available</button>
+                    </div>
+                </div>
+                <!--charging level drop down-->
+                <div id="cl_container">
+                    <button class="filters" id="Charge" onclick="toggleChargePanel('cl_panel')">Charging Level</button>
+                    <hr>
+                    <div id="cl_panel">
+                        <button class="filter_toggle" id="lvl1">Level 1</button>
+                        <button class="filter_toggle" id="lvl2">Level 2</button>
+                        <button class="filter_toggle" id="lvl3">Level 3</button>
+                    </div>
+                </div>
+                <!--pricing dropdown-->
+                <div id="pricing_container">
+                    <button class="filters" id="Pricing" onclick="togglePricePanel('price_panel')">Pricing</button>
+                    <hr>
+                    <div id="price_panel">
+                        <button class="filter_toggle" id="free">Free</button>
+                        <button class="filter_toggle" id="lowPrice">Lowest $</button>
+                        <button class="filter_toggle" id="noPref">No Pref.</button>
+                    </div>
+                </div>
+                <!--plug type dropdown-->
+                <div id="plug_container">
+                    <button class="filters" id="plugType" onclick="togglePlugPanel('plug_panel')">Plug Type</button>
+                    <div id="plug_panel">
+                        <!--DC plug toggle-->
+                        <div id="DC_toggle">
+                            <img src="../evolveRepo/images/DC CCS.png">
+                            <h1 class="filter-titles">DC CCS</h1>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <!--GBT plug toggle-->
+                        <div id="gbt_toggle">
+                            <img src="../evolveRepo/images/GBT.png">
+                            <h1 class="filter-titles">GB/T</h1>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <!--CHAdeMO plug toggle-->
+                        <div id="cdm_toggle">
+                            <img src="../evolveRepo/images/CHAdeMO.png">
+                            <h1 class="filter-titles">CHAdeMO</h1>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <!--CCS Type 1 plug toggle-->
+                        <div id="ccst1_toggle">
+                            <img src="../evolveRepo/images/CCS Type 1.png">
+                            <h1 class="filter-titles">CCS Type 1</h1>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <!--Type 2 plug toggle-->
+                        <div id="t2_toggle">
+                            <img src="../evolveRepo/images/type 2.png">
+                            <h1 class="filter-titles">Type 2</h1>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--Network dropdown-->
+                <div id="network_container">
+                    <button class="filters" id="Network" onclick="toggleNetworkPanel('network_panel')">Network</button>
+                    <div id="network_panel">
+                        <div id="chargepoint_toggle">
+                            <h1 class="filter-titles">Chargepoint</h1>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div id="ev_toggle">
+                            <h1 class="filter-titles">EV Connect</h1>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div id="ea_toggle">
+                            <h1 class="filter-titles">Electrify America</h1>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div id="tesla_toggle">
+                            <h1 class="filter-titles">Tesla</h1>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--rating dropdown-->
+                <button class="filters" id="rating">Rating</button>
+                <div id="apply_container">
+                    <button id="apply_button">Apply</button>
+                </div>
+            </div>
+            
+        </div>
+   
+    
+</body>
+<script src="js/filter_index.js"></script> 
+</html>
