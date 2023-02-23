@@ -62,7 +62,7 @@ body {
     top: 0px;
     left: 100%;
     width: 100%;
-    min-height: 63vh; /* previously 100vh */
+    min-height: 64vh; /* previously 100vh */
     background-color: #7836F1;
     padding-top: 120px;
     transition: 0.4s;
@@ -115,10 +115,22 @@ body {
       flex-direction: column;
       background-color: #ffffff;
       padding: 8px;
-      border-top: #7836F1 solid 5px;
+      border-top: #6d6d6d solid 5px;
       width: 270px;
-      height: 100px;
+      /*height: 100px;*/
       margin-left: 12px;
+    }
+
+    .stationcardActive {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      padding: 8px;
+      border-top: #7836F1 solid 5px !important;
+      width: 270px;
+      /*height: 100px;*/
+      margin-left: 12px;
+    }
     }
 
 .scrolladdress p {
@@ -329,4 +341,177 @@ body {
     .address {
       flex: 1;
     }
+
+
+
+    /* Filter Buttons */
+    .filterButtons {
+      z-index: 97;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      gap: 26px;
+      width: 82px;
+      height: 283px;
+      position: absolute;
+      left: 296px;
+      top: 528px;
+      /* background: rgba(120, 54, 241, .8);
+      backdrop-filter: blur(5px); */
+    }
+    
+
+
+    .smallicon {
+      height: 41px;
+      width: 41px;
+    }
+
+    /* Map Selection menu*/
+
+    .map-overlay {
+      display: block;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    .actionsheet {
+      position: relative;
+      bottom: -100%; /* start offscreen */
+      width: 358px;
+      top: 535px;
+      left: -8px;
+      right: 0;
+      background-color: rgba(30, 30, 30, 0.9);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 16px;
+      z-index: 9999;
+      transition: bottom 0.3s ease-in-out; /* add transition effect */
+    }
+    
+    .actionsheet-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .actionsheet-option {
+     /* background-color: rgb(73, 73, 73); */
+      padding: 12px 16px;
+      border-radius: 0px;
+      text-align: center;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #66E4D3;
+      font-family: sans-serif;
+    }
+    
+    .actionsheet-cancel {
+      background-color: rgb(32 32 32);
+      padding: 12px 16px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #7836F1; /* iOS blue */
+      margin-top: 12px;
+    }
+    
+    .hidden {
+      display: none;
+    }
+    
+    /* pop up */
+    .alert-overlay {
+      display: none;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+    
+    .alert {
+      position: absolute;
+      top: 36%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      background-color: rgba(30, 30, 30, .90);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+    }
+    
+    .alert-header p {
+      padding: 0px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      /*border-bottom: 1px solid #eee;*/
+    }
+    
+    .alert-body p {
+      padding: 0px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    
+    .alert-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /*justify-content: space-between;
+      padding: 20px;
+      border-top: 1px solid #eee; */
+    }
+    
+    .alert-footer button {
+      padding: 10px 20px;
+      border: none;
+      /*background-color: #007aff; */
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 8px 0;
+      background: none;
+      font-size: 20px;
+      color: #66E4D3
+      /*line-height: 0; */
+    }
+    
+    .alert-footer button:hover {
+      /* background-color: #006fe6; */
+    }
+    
+.filter-edit-btn .remove-all-btn .cancel-btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
+
+.cancel-btn {
+  color: #7836F1;
+
+}
+
+    .edit-btn {
+      background: none;
+      border: none;
+    }

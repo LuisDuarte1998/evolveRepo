@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <!-- Top Nav -->
@@ -63,7 +64,7 @@
                     <p>1234 Central Ave Tampa, Fl 33709</p>
                 </div><!-- address-->
         
-                <div class="btn-go"> <!--button-->
+                <div class="btn-go btn-map"> <!--button-->
                     <a href="#" class="btn btn-primary">Go!</a>
                 </div> <!--button-->
         
@@ -98,7 +99,7 @@
                     <p>1234 Central Ave Tampa, Fl 33709</p>
                 </div><!-- address-->
         
-                <div class="btn-go"> <!--button-->
+                <div class="btn-go btn-map"> <!--button-->
                     <a href="#" class="btn btn-primary">Go!</a>
                 </div> <!--button-->
         
@@ -133,7 +134,7 @@
                     <p>1234 Central Ave Tampa, Fl 33709</p>
                 </div><!-- address-->
         
-                <div class="btn-go"> <!--button-->
+                <div class="btn-go btn-map"> <!--button-->
                     <a href="#" class="btn btn-primary">Go!</a>
                 </div> <!--button-->
         
@@ -143,8 +144,9 @@
         <!-- Station 3 End -->
 
 <!-- Horizontal Cards -->
+
     <div class="stationScroll-wrapper"> <!-- Scroll Parent-->
-        <div class="stationCard"> <!-- Station  -->
+        <div class="stationCard" data-location="stationOne"> <!-- Station  -->
             <div> 
                 <div class="scrolltopLine"> <!-- Station and Available-->
                     <p class="scrollTitle">Wawa</p>
@@ -158,12 +160,14 @@
                 </div><!-- address-->
         
                 <div class="btn-nav2"> <!--button-->
-                    <a href="#" class="btn-nav"><img src="/images/nav_card_30x30.png" height="30px" ; width="30px"></a>
+                    <!-- <button class="btn-go"> -->
+                    <a href="#" class="btn-nav btn-map"><img src="/images/nav_card_30x30.png" height="30px" ; width="30px"></a>
+                <!-- </button> -->
                 </div> <!--button-->
             </div><!-- address and button-->
         </div>
 
-        <div class="stationCard"> <!-- Station  -->
+        <div class="stationCard" data-location="stationTwo"> <!-- Station  -->
             <div>
                 <div class="scrolltopLine"> <!-- Station and Available-->
                     <p class="scrollTitle">International Mall</p>
@@ -177,12 +181,12 @@
                 </div><!-- address-->
         
                 <div class="btn-nav2"> <!--button-->
-                    <a href="#" class="btn-nav"><img src="/images/nav_card_30x30.png" height="30px" ; width="30px"></a>
+                    <a href="#" class="btn-nav btn-map"><img src="/images/nav_card_30x30.png" height="30px" ; width="30px"></a>
                 </div> <!--button-->
             </div><!-- address and button-->
         </div>
 
-        <div class="stationCard"> <!-- Station  -->
+        <div class="stationCard" data-location="stationThree"> <!-- Station  -->
             <div> 
                 <div class="scrolltopLine"> <!-- Station and Available-->
                     <p class="scrollTitle">Tesla</p>
@@ -196,19 +200,57 @@
                 </div><!-- address-->
         
                 <div class="btn-nav2"> <!--button-->
-                    <a href="#" class="btn-nav"><img src="/images/nav_card_30x30.png" height="30px" ; width="30px"></a>
+                    <a href="#" class="btn-nav btn-map"><img src="/images/nav_card_30x30.png" height="30px" ; width="30px"></a>
                 </div> <!--button-->
             </div><!-- address and button-->
         </div>
     </div> <!-- Scroll Parent-->
+
 <!-- Horizontal Cards End -->
 
 
+<!-- Filter Buttons -->
+<div class="filterButtons"> <!-- Filter Buttons Wrapper-->
+    <img class="smallicon" src="/images/myplugs41x41.png">
+    <img class="smallicon" src="/images/mypricing41x41.png">
+    <img class="smallicon" src="/images/nearme41x41.png">
+    
+<button class="edit-btn"><img src="/images/customfilters82x82_active.png" height="82px" width="82px"></button>
+</div>
+</div><!-- Filter Buttons Wrapper-->
+
+<!-- Filter Buttons -->
+
+<!-- actionsheet -->
+
+<div class="actionsheet hidden">
+    <div class="actionsheet-options">
+        <div class="actionsheet-option">Apple Maps</div>
+        <div class="actionsheet-option">Google Maps</div>
+        <div class="actionsheet-option">Waze</div>
+    </div>
+    <div class="actionsheet-cancel">Cancel</div>
+    <div class="map-overlay"></div>
+</div>
 
 
 
-
-
+  <!-- Edit pop up-->
+  <div class="alert-overlay">
+    <div class="alert">
+      <div class="alert-header">
+        <p>Edit filters?</p>
+      </div>
+      <div class="alert-body">
+        <p>Removing filters will clear your search results.</p>
+      </div>
+      <div class="alert-footer">
+        <button class="filter-edit-btn">Edit</button>
+        <a href="/main.html"><button class="remove-all-btn">Remove All</button></a>
+        <a href="/index.html"><button class="cancel-btn" style="color: #7836F1;">Cancel</button></a>
+      </div>
+    </div>
+  </div>
 
     <script src="/js/index.js"></script>
 </body>
