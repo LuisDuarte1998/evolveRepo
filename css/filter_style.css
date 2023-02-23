@@ -1,3 +1,6 @@
+@media (max-width: 390px) {
+}
+
 body{
     margin: 0;
     background: grey;
@@ -128,6 +131,9 @@ hr{
     display: flex;
     flex-direction: row;
     margin-left: 35px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 #cl_panel{
@@ -280,4 +286,37 @@ input:checked + .slider:before {
   
 .slider.round:before {
     border-radius: 50%;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion{
+    background-image: url("../images/Vector.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: 337px !important;
+    transition: 0.4s !important;
+}
+
+.arrow{
+    transition: all .2s linear;
+}
+
+.arrow .down{
+    transform:rotate(180deg);
 }
