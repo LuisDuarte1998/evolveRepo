@@ -320,3 +320,27 @@ input:checked + .slider:before {
 .arrow .down{
     transform:rotate(180deg);
 }
+
+.plug_type_row{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.plug_type_column{
+    flex: 1;
+    padding: 0 10px;
+}
+
+.plug_type_column img {
+    width: 100%;
+    height: auto;
+}
+
+.plug_type_column .filter-titles{
+    text-align: center;
+}
