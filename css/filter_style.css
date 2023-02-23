@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+    background: grey;
+}
+
+.sections_button_holder{
+    float: left;
+    width: 394px;
+    
+    padding-top: 20px;
+}
+.sections_button_holder > button{
+    background-color: #E4E3EE;
+    text-align: left;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 337px;
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+    text-indent: 15px;
+    color: #343434;
+    cursor: pointer;
+}
+
+#filterButton{
+    border-radius: 50%;
+    height: 82px;
+    width: 82px;
+    background-image: url("../images/filter.png");
+    background-position: 22.5px;
+}
+
+#filter_panel > #filter_container{
+    background: #333;
+    padding: 20px;
+    height: 710px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter_panel{
+    position: absolute;
+    height: 0px;
+    width: 450px;
+    top: 60px;
+
+    background: white;
+    overflow: hidden;
+    z-index: 10000;
+    transition: height 0.3s, linear .1s;;
+}
+
+.filters{
+    width: 393px;
+    height: 44px;
+    top: 2px;
+    font-family: 'Kumbh Sans';
+    background-image: url("../images/Vector.png");
+    background-repeat: no-repeat;
+    background-position: 337px;
+    padding: 0;
+    border: none;
+}
+
+#cancel-toggle{
+    background: none;
+    border: none;
+    color: #7836F1;
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 90px;
+}
+
+#top_container{
+    display: flex;
+    flex-direction: row;
+    text-indent: 175px;
+}
+
+h1{
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+}
+
+hr{
+    margin: 0;
+}
+
+#apply_button{
+    width: 167px;
+    height: 48px;
+    margin-left: 117px;
+    background-color: #7836F1;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Kumbh Sans';
+    color: white;
+}
+
+.top_container input[type=text]{
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: #767680;
+    border: none;
+    border-radius: 10px;
+    background-image: url("../images/microphone.png"), url("../images/magnifyingglass.png");
+    background-repeat: no-repeat;
+    background-position: 8px, 340px;
+    height: 36px;
+    width: 360px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.filter_toggle{
+    width: 167px;
+    height: 48px;
+    background-color: #7836F1;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Kumbh Sans';
+    color: white;
+}
+
+#av_panel{
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+}
+
+#cl_panel{
+    display: flex;
+    flex-direction: row;
+}
+
+#price_panel{
+    display: flex;
+    flex-direction: row;
+}
+
+#search_container{
+    display: flex;
+    flex-direction: row;
+}
+/*code for the search bar*/
+#search_container input[type=text]{
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: #767680;
+    border: none;
+    border-radius: 10px;
+    background-image: url("../images/microphone.png"), url("../images/magnifyingglass.png");
+    background-repeat: no-repeat;
+    background-position: 8px, 340px;
+    height: 36px;
+    width: 360px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+/*code for the placeholder text inside the search bar*/
+input::placeholder{
+    text-indent: 30px;
+}
+/*All plug code*/
+#DC_toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+#gbt_toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+#cdm_toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+#ccst1_toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+#t2_toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+/*All network code*/
+#chargepoint_toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+#ev_toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+#ea_toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+#tesla_toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+/*slider code*/
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+    border: black;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*toggle switch dot*/
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background-color: white;
+    border: black;
+}
+
+input:checked + .slider {
+    background-color: #66E4D3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #66E4D3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
