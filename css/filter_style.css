@@ -115,6 +115,7 @@ hr{
     width: 360px;
     margin-top: 18px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .filter_toggle{
@@ -164,6 +165,7 @@ hr{
     width: 360px;
     margin-top: 18px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 /*code for the placeholder text inside the search bar*/
 input::placeholder{
@@ -337,17 +339,18 @@ input:checked + .slider:before {
 }
 
 .plug_type_column img {
-    width: 100%;
     height: auto;
 }
 
 .plug_type_column, .filter-titles, #plug-titles{
     text-align: center;
+    font-family: 'Kumbh Sans';
 }
 
 .plug_type_column, .filter-titles, #network-titles{
     text-align: left;
     padding-right: ;
+    font-family: 'Kumbh Sans';
 }
 
 .network_row{
