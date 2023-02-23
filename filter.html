@@ -67,7 +67,7 @@
                                     <img src="../evolveRepo/images/DC CCS.png" width="60px" height="55px" alt="DC CCS plug">
                                 </div>
                                 <div class="plug_type_column">
-                                    <h1 class="filter-titles">DC CCS</h1>
+                                    <h1 class="filter-titles" id="plug-titles">DC CCS</h1>
                                 </div>
                                 <div class="plug_type_column">
                                     <label class="switch">
@@ -81,10 +81,10 @@
                         <div id="gbt_toggle">
                             <div class="plug_type_row">
                                 <div class="plug_type_column">
-                                    <img src="../evolveRepo/images/GBT.png" width="60px" height="55px" alt="GB/T plug">
+                                    <img src="../evolveRepo/images/GBT.png" width="52px" height="52px" alt="GB/T plug">
                                 </div>
                                 <div class="plug_type_column">
-                                    <h1 class="filter-titles">GB/T</h1>
+                                    <h1 class="filter-titles" id="plug-titles">GB/T</h1>
                                 </div>
                                 <div class="plug_type_column">
                                     <label class="switch">
@@ -101,7 +101,7 @@
                                     <img src="../evolveRepo/images/CHAdeMO.png" width="60px" height="55px" alt="CHAdeMO plug">
                                 </div>
                                 <div class="plug_type_column">
-                                    <h1 class="filter-titles">CHAdeMO</h1>
+                                    <h1 class="filter-titles" id="plug-titles">CHAdeMO</h1>
                                 </div>
                                 <div class="plug_type_column">
                                     <label class="switch">
@@ -118,7 +118,7 @@
                                     <img src="../evolveRepo/images/CCS Type 1.png" width="60px" height="55px" alt="CCS Type 1 plug">
                                 </div>
                                 <div class="plug_type_column">
-                                    <h1 class="filter-titles">CCS Type 1</h1>
+                                    <h1 class="filter-titles" id="plug-titles">CCS Type 1</h1>
                                 </div>
                                 <div class="plug_type_column">
                                     <label class="switch">
@@ -135,7 +135,7 @@
                                     <img src="../evolveRepo/images/type 2.png" width="60px" height="55px" alt="Type 2 plug">
                                 </div>
                                 <div class="plug_type_column">
-                                    <h1 class="filter-titles">Type 2</h1>
+                                    <h1 class="filter-titles" id="plug-titles">Type 2</h1>
                                 </div>
                                 <div class="plug_type_column">
                                     <label class="switch">
@@ -155,7 +155,7 @@
                         <div id="chargepoint_toggle">
                             <div class="network_row">
                                 <div class="network_column">
-                                    <h1 class="filter-titles">Chargepoint</h1>
+                                    <h1 class="filter-titles" id="network-titles">Chargepoint</h1>
                                 </div>
                                 <div class="network_column">
                                     <label class="switch">
@@ -166,25 +166,43 @@
                             </div>
                         </div>
                         <div id="ev_toggle">
-                            <h1 class="filter-titles">EV Connect</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="network_row">
+                                <div class="network_column">
+                                    <h1 class="filter-titles" id="network-titles">EV Connect</h1>
+                                </div>
+                                <div class="network_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <div id="ea_toggle">
-                            <h1 class="filter-titles">Electrify America</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="network_row">
+                                <div class="network_column">
+                                    <h1 class="filter-titles" id="network-titles">Electrify America</h1>
+                                </div>
+                                <div class="network_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <div id="tesla_toggle">
-                            <h1 class="filter-titles">Tesla</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="network_row">
+                                <div class="network_column">
+                                    <h1 class="filter-titles" id="network-titles">Tesla</h1>
+                                </div>
+                                <div class="network_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <hr>
