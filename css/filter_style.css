@@ -40,6 +40,7 @@ body{
     margin: 10px;
     display: flex;
     flex-direction: column;
+    overflow-y:auto
 }
 
 #filter_panel{
@@ -94,7 +95,7 @@ hr{
 #apply_button{
     width: 167px;
     height: 48px;
-    margin-left: 117px;
+    margin-left: 97px;
     background-color: #7836F1;
     border: none;
     border-radius: 10px;
@@ -137,7 +138,7 @@ hr{
     transition: max-height 0.2s ease-out;
 }
 
-#cl_panel{
+/*#cl_panel{
     display: flex;
     flex-direction: row;
 }
@@ -145,7 +146,7 @@ hr{
 #price_panel{
     display: flex;
     flex-direction: row;
-}
+}*/
 
 #search_container{
     display: flex;
@@ -308,6 +309,11 @@ input:checked + .slider:before {
     overflow: hidden;
 }
 
+.panel > #cl_panel{
+    display: flex;
+    flex-direction: row;
+}
+
 .accordion{
     background-image: url("../images/Vector.png") !important;
     background-repeat: no-repeat !important;
@@ -340,6 +346,7 @@ input:checked + .slider:before {
 
 .plug_type_column img {
     height: auto;
+
 }
 
 .plug_type_column, .filter-titles, #plug-titles{
@@ -362,3 +369,35 @@ input:checked + .slider:before {
     margin-right: 0 !important;
     margin-left: 0 !important;
 }
+
+.star-rating {
+    display: none;
+    flex-direction: row-reverse;
+    font-size:3.5em;
+    justify-content: space-around;
+    padding:0 .2em;
+    text-align: center;
+    margin: 0;
+    width: 6em;
+}
+  
+.star-rating input {
+    display:none;
+}
+  
+.star-rating label {
+    color:#ccc;
+    cursor:pointer;
+}
+  
+.star-rating :checked ~ label {
+    color:#f90;
+}
+  
+.star-rating label:hover, .star-rating label:hover ~ label {
+    color:#7836F1;
+}
+
+/*.random{
+    display: block;
+}*/
