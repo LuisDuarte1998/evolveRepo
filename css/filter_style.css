@@ -1,3 +1,6 @@
+@media (max-width: 390px) {
+}
+
 body{
     margin: 0;
     background: grey;
@@ -37,6 +40,7 @@ body{
     margin: 10px;
     display: flex;
     flex-direction: column;
+    overflow-y:auto
 }
 
 #filter_panel{
@@ -91,7 +95,7 @@ hr{
 #apply_button{
     width: 167px;
     height: 48px;
-    margin-left: 117px;
+    margin-left: 97px;
     background-color: #7836F1;
     border: none;
     border-radius: 10px;
@@ -112,6 +116,7 @@ hr{
     width: 360px;
     margin-top: 18px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .filter_toggle{
@@ -128,9 +133,12 @@ hr{
     display: flex;
     flex-direction: row;
     margin-left: 35px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
-#cl_panel{
+/*#cl_panel{
     display: flex;
     flex-direction: row;
 }
@@ -138,7 +146,7 @@ hr{
 #price_panel{
     display: flex;
     flex-direction: row;
-}
+}*/
 
 #search_container{
     display: flex;
@@ -158,6 +166,7 @@ hr{
     width: 360px;
     margin-top: 18px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 /*code for the placeholder text inside the search bar*/
 input::placeholder{
@@ -195,7 +204,7 @@ input::placeholder{
     gap: 50px;
 }
 /*All network code*/
-#chargepoint_toggle{
+/*#chargepoint_toggle{
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -218,7 +227,7 @@ input::placeholder{
     flex-direction: row;
     margin: 0;
     gap: 50px;
-}
+}*/
 /*slider code*/
 .switch{
     position: relative;
@@ -281,3 +290,114 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.panel > #cl_panel{
+    display: flex;
+    flex-direction: row;
+}
+
+.accordion{
+    background-image: url("../images/Vector.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: 337px !important;
+    transition: 0.4s !important;
+}
+
+.arrow{
+    transition: all .2s linear;
+}
+
+.arrow .down{
+    transform:rotate(180deg);
+}
+
+.plug_type_row{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.plug_type_column{
+    flex: 1;
+    padding: 0 10px;
+}
+
+.plug_type_column img {
+    height: auto;
+
+}
+
+.plug_type_column, .filter-titles, #plug-titles{
+    text-align: center;
+    font-family: 'Kumbh Sans';
+}
+
+.plug_type_column, .filter-titles, #network-titles{
+    text-align: left;
+    padding-right: ;
+    font-family: 'Kumbh Sans';
+}
+
+.network_row{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.star-rating {
+    display: none;
+    flex-direction: row-reverse;
+    font-size:3.5em;
+    justify-content: space-around;
+    padding:0 .2em;
+    text-align: center;
+    margin: 0;
+    width: 6em;
+}
+  
+.star-rating input {
+    display:none;
+}
+  
+.star-rating label {
+    color:#ccc;
+    cursor:pointer;
+}
+  
+.star-rating :checked ~ label {
+    color:#f90;
+}
+  
+.star-rating label:hover, .star-rating label:hover ~ label {
+    color:#7836F1;
+}
+
+/*.random{
+    display: block;
+}*/

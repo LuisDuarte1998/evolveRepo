@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-        
     <title>Document</title>
 </head>
 <body>
@@ -30,128 +29,207 @@
             <div id="filter_container">
                 <!--availability drop down-->
                 <div id="av_container">
-                    <button class="filters" id="Availability" onclick="toggleAvPanel('av_panel')">Availability</button>
-                    <hr>
-                    <div id="av_panel">
+                    <button class="accordion">Availability<img class="arrow" src="../evolveRepo/images/Vector.png"></button>
+                    <div class="panel">
                         <button class="filter_toggle" id="unavailable">Unavailable</button>
                         <button class="filter_toggle" id="available">Available</button>
                     </div>
+                    <hr>
                 </div>
                 <!--charging level drop down-->
                 <div id="cl_container">
-                    <button class="filters" id="Charge" onclick="toggleChargePanel('cl_panel')">Charging Level</button>
-                    <hr>
-                    <div id="cl_panel">
+                    <button class="accordion">Charging Level</button>
+                    <div class="panel" id="cl_panel">
                         <button class="filter_toggle" id="lvl1">Level 1</button>
                         <button class="filter_toggle" id="lvl2">Level 2</button>
                         <button class="filter_toggle" id="lvl3">Level 3</button>
                     </div>
+                    <hr>
                 </div>
                 <!--pricing dropdown-->
                 <div id="pricing_container">
-                    <button class="filters" id="Pricing" onclick="togglePricePanel('price_panel')">Pricing</button>
-                    <hr>
-                    <div id="price_panel">
+                    <button class="accordion">Pricing</button>
+                    <div class="panel" id="price_panel">
                         <button class="filter_toggle" id="free">Free</button>
                         <button class="filter_toggle" id="lowPrice">Lowest $</button>
                         <button class="filter_toggle" id="noPref">No Pref.</button>
                     </div>
+                    <hr>
                 </div>
                 <!--plug type dropdown-->
                 <div id="plug_container">
-                    <button class="filters" id="plugType" onclick="togglePlugPanel('plug_panel')">Plug Type</button>
-                    <div id="plug_panel">
+                    <button class="accordion">Plug Type</button>
+                    <div class="panel" id="plug_panel">
                         <!--DC plug toggle-->
                         <div id="DC_toggle">
-                            <img src="../evolveRepo/images/DC CCS.png">
-                            <h1 class="filter-titles">DC CCS</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="plug_type_row">
+                                <div class="plug_type_column">
+                                    <img src="../evolveRepo/images/DC CCS.png" width="60px" height="55px" alt="DC CCS plug">
+                                </div>
+                                <div class="plug_type_column">
+                                    <h1 class="filter-titles" id="plug-titles">DC CCS</h1>
+                                </div>
+                                <div class="plug_type_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>                      
                         </div>
                         <!--GBT plug toggle-->
                         <div id="gbt_toggle">
-                            <img src="../evolveRepo/images/GBT.png">
-                            <h1 class="filter-titles">GB/T</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="plug_type_row">
+                                <div class="plug_type_column">
+                                    <img src="../evolveRepo/images/GBT.png" width="52px" height="52px" alt="GB/T plug">
+                                </div>
+                                <div class="plug_type_column">
+                                    <h1 class="filter-titles" id="plug-titles">GB/T</h1>
+                                </div>
+                                <div class="plug_type_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <!--CHAdeMO plug toggle-->
                         <div id="cdm_toggle">
-                            <img src="../evolveRepo/images/CHAdeMO.png">
-                            <h1 class="filter-titles">CHAdeMO</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
+                            <div class="plug_type_row">
+                                <div class="plug_type_column">
+                                    <img src="../evolveRepo/images/CHAdeMO.png" width="60px" height="55px" alt="CHAdeMO plug">
+                                </div>
+                                <div class="plug_type_column">
+                                    <h1 class="filter-titles" id="plug-titles">CHAdeMO</h1>
+                                </div>
+                                <div class="plug_type_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>   
                         <!--CCS Type 1 plug toggle-->
                         <div id="ccst1_toggle">
-                            <img src="../evolveRepo/images/CCS Type 1.png">
-                            <h1 class="filter-titles">CCS Type 1</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="plug_type_row">
+                                <div class="plug_type_column">
+                                    <img src="../evolveRepo/images/CCS Type 1.png" width="60px" height="55px" alt="CCS Type 1 plug">
+                                </div>
+                                <div class="plug_type_column">
+                                    <h1 class="filter-titles" id="plug-titles">CCS Type 1</h1>
+                                </div>
+                                <div class="plug_type_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <!--Type 2 plug toggle-->
                         <div id="t2_toggle">
-                            <img src="../evolveRepo/images/type 2.png">
-                            <h1 class="filter-titles">Type 2</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="plug_type_row">
+                                <div class="plug_type_column">
+                                    <img src="../evolveRepo/images/type 2.png" width="60px" height="55px" alt="Type 2 plug">
+                                </div>
+                                <div class="plug_type_column">
+                                    <h1 class="filter-titles" id="plug-titles">Type 2</h1>
+                                </div>
+                                <div class="plug_type_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <hr>
                 </div>
                 <!--Network dropdown-->
                 <div id="network_container">
-                    <button class="filters" id="Network" onclick="toggleNetworkPanel('network_panel')">Network</button>
-                    <div id="network_panel">
+                    <button class="accordion">Network</button>
+                    <div class="panel" id="network_panel">
                         <div id="chargepoint_toggle">
-                            <h1 class="filter-titles">Chargepoint</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="network_row">
+                                <div class="network_column">
+                                    <h1 class="filter-titles" id="network-titles">Chargepoint</h1>
+                                </div>
+                                <div class="network_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <div id="ev_toggle">
-                            <h1 class="filter-titles">EV Connect</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="network_row">
+                                <div class="network_column">
+                                    <h1 class="filter-titles" id="network-titles">EV Connect</h1>
+                                </div>
+                                <div class="network_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <div id="ea_toggle">
-                            <h1 class="filter-titles">Electrify America</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="network_row">
+                                <div class="network_column">
+                                    <h1 class="filter-titles" id="network-titles">Electrify America</h1>
+                                </div>
+                                <div class="network_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <div id="tesla_toggle">
-                            <h1 class="filter-titles">Tesla</h1>
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <div class="network_row">
+                                <div class="network_column">
+                                    <h1 class="filter-titles" id="network-titles">Tesla</h1>
+                                </div>
+                                <div class="network_column">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <hr>
+
                 </div>
                 <!--rating dropdown-->
-                <button class="filters" id="rating">Rating</button>
+                <button class="accordion">Rating</button>
+                <div class="random">
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars" name="rating" value="5" />
+                        <label for="5-stars" class="star">&#9733;</label>
+                        <input type="radio" id="4-stars" name="rating" value="4" />
+                        <label for="4-stars" class="star">&#9733;</label>
+                        <input type="radio" id="3-stars" name="rating" value="3" />
+                        <label for="3-stars" class="star">&#9733;</label>
+                        <input type="radio" id="2-stars" name="rating" value="2" />
+                        <label for="2-stars" class="star">&#9733;</label>
+                        <input type="radio" id="1-star" name="rating" value="1" />
+                        <label for="1-star" class="star">&#9733;</label>
+                    </div>
+                </div>
+                    <hr>
                 <div id="apply_container">
                     <button id="apply_button">Apply</button>
-                </div>
+                </div>      
             </div>
-            
         </div>
-   
-    
 </body>
-<script src="js/filter_index.js"></script> 
+<script src="js/filter_index.js"></script>
 </html>
