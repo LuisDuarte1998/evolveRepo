@@ -100,14 +100,28 @@ for (i = 0; i < acc.length; i++) {
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
+    if (panel.style.display == "block") {
       panel.style.display = "none";
     } else {
       panel.style.display = "block";
     }
   });
-} 
+}
 
-$(".arrow").click(function(){
-    $(this).toggleClass("down"); 
-})
+const container = document.querySelector('.rating');
+const items = container.querySelectorAll('.rating-item');
+
+container.onclick = e => {
+    const elClass = e.target.classList;
+    if(!elClass.contains('active')){
+        items.forEach(
+            item => item.classList.remove('active')
+        );
+        console.log(e.target.getAttribute("data-rate"));
+        elClass.add('active')
+    }
+};
+
+// $(".arrow").click(function(){
+//     $(this).toggleClass("down"); 
+// })
