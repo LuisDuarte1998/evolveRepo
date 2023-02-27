@@ -62,7 +62,7 @@ body {
     top: 0px;
     left: 100%;
     width: 100%;
-    min-height: 64vh; /* previously 100vh */
+    min-height: 702px; /* previously 100vh */
     background-color: #7836F1;
     padding-top: 120px;
     transition: 0.4s;
