@@ -5,7 +5,7 @@ all css happens here}*/
 
 @media (max-width: 390px) {
 body {
-    background-image: url("images/map.png");
+    background-image: url("../images/map.png");
     background-size: 393px 852px;
     background-repeat: no-repeat;
     font-family: 'Kumbh Sans', sans-serif;
