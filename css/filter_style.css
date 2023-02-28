@@ -1,11 +1,6 @@
 @media (max-width: 390px) {
 }
 
-body{
-    margin: 0;
-    background: grey;
-}
-
 .sections_button_holder{
     float: left;
     width: 394px;
@@ -429,3 +424,11 @@ input:checked + .slider:before {
 .rating-item.active ~ .rating-item::before{
     content: "\2606";
 }
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
