@@ -5,7 +5,7 @@ all css happens here}*/
 
 @media (max-width: 390px) {
 body {
-    background-image: url(/images/map.png);
+    background-image: url("../images/map.png");
     background-size: 393px 852px;
     background-repeat: no-repeat;
     font-family: 'Kumbh Sans', sans-serif;
@@ -62,7 +62,7 @@ body {
     top: 0px;
     left: 100%;
     width: 100%;
-    min-height: 64vh; /* previously 100vh */
+    min-height: 702px; /* previously 100vh */
     background-color: #7836F1;
     padding-top: 120px;
     transition: 0.4s;
@@ -493,10 +493,6 @@ body {
       font-size: 20px;
       color: #66E4D3
       /*line-height: 0; */
-    }
-    
-    .alert-footer button:hover {
-      /* background-color: #006fe6; */
     }
     
 .filter-edit-btn .remove-all-btn .cancel-btn {
