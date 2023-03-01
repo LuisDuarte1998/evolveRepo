@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- links and references to the font family of 'Kumbh Sans'-->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="drop-wrapper">
+                <button class="btn" data-target="#dropup"></button>
+                <div class="drop-menu dropup" id="dropup">
+                    <div class="grid-container">
+                        <div class="topnav">
+                            <div id="top-container">
+                                <h1 id="title_Filters">Filters</h1>
+                                <button id="cancel-toggle">Cancel</button>
+                            </div>
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <hr>
+                        <div id="menu-container">
+                            <hr>
+                            <div class="sections_button_holder">
+                                <button onclick="toggleAvaiPanel('availability_panel')">Availability</button>
+                            </div>
+                            <div id="availability_panel">
+                                <hr>
+                                <div>
+                                    <button class="Availability" id="Unavailable">Unavailable</button>
+                                    <button class="Availability" id="Available">Available</button>
+                                </div>
+                            </div>
+                            <a href="#">Charging Level</a>
+                                <div class="drop-wrapper Charging Level">
+                                    <button class="levels">Level 1</button>
+                                    <button class="levels">Level 2</button>
+                                    <button class="levels">Level 3</button>
+                                </div>
+                            <hr>
+                            <a href="#">Pricing</a>
+                                <div class="drop-wrapper Pricing">
+                                    <button class="price">Free</button>
+                                    <button class="price">Lowest $</button>
+                                    <button class="price">No Pref.</button>
+                                </div>
+                            <hr>
+                            <a href="#">Plug Type</a>
+                                <div class="drop-wrapper Plug Type">
+                                    <div class="DC-toggle">
+                                        <img src="./images/DC CCS.png">
+                                        <h1 class="filter-titles">DC CCS</h1>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>  
+                                    <div class="GBT-toggle">
+                                        <img src="./images/GBT.png">
+                                        <h1 class="filter-titles">GB/T</h1>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <div class="CHAdeMO-toggle">
+                                        <img src="./images/CHAdeMO.png">
+                                        <h1 class="filter-titles">CHAdeMO</h1>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <div class="CCS-toggle">
+                                        <img src="./images/CCS Type 1.png">
+                                        <h1 class="filter-titles">CCS Type 1</h1>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <div class="type-toggle">
+                                        <img src="./images/Type 2.png">
+                                        <h1 class="filter-titles">Type 2</h1>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>   
+                                </div>
+                            <hr>
+                            <a href="#">Network</a>
+                                <div class="drop-wrapper Network">
+                                    <div class="Chargepoint-toggle">
+                                        <h1 class="filter-titles">Chargepoint</h1>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <hr>
+                                    <div class="EV-toggle">
+                                        <h1 class="filter-titles">EV Connect</h1>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <hr>
+                                    <div class="Electrify-toggle">
+                                        <h1 class="filter-titles">Electrify America</h1>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <hr>
+                                    <div class="Tesla-toggle">
+                                        <h1 class="filter-titles">Tesla</h1>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            <hr>
+                            <a href="#">Minimum Rating</a>
+                                <div class="drop-wrapper Minimum Rating">
+                                    <!--Add the stars here-->
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 stars</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 stars</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 stars</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 stars</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 star</label>
+                                    </div>
+                                </div>
+                            <hr>
+                        </div>
+                        <button class="apply">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

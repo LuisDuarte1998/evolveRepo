@@ -1,0 +1,390 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 992px;
+    margin-top: 852px;
+}
+/*button code*/
+.btn{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border-radius: 50%;
+    height: 82px;
+    width: 82px;
+    cursor: pointer;
+    background-image: url("../images/filter.png");
+    background-repeat: no-repeat;
+    background-position: 22.5px;
+}
+
+.btn.active{
+    box-shadow: 0 0 0 0.125rem rgba(13, 128, 250, 0.5);
+}
+
+.drop-wrapper{
+    position: relative;
+}
+
+.drop-menu{
+    display: none;
+    position: absolute;
+    width: 393px;
+    height: 600px;
+    box-shadow: 1px 1px 3px 0 #ccc;
+}
+
+a{
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+}
+.drop-menu.active{
+    display: block;
+}
+
+.dropup{
+    bottom: 100%;
+    right: 0.25%;
+    margin-bottom: 0.125rem;
+    text-align: center;
+    border-radius: 10px;
+}
+/*click menu code*/
+.drop-menu a{
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #343434;
+    background-color: #E4E3EE;
+    text-align: left;
+    height: 44px;
+    width: 362px;
+    background-image: url("../images/Vector.png");
+    background-repeat: no-repeat;
+    background-position: 337px;
+}
+/*rotates the vector to upside down after click*/
+.drop-menu a::after{
+    transform: rotate(180deg);
+}
+/*code for the search bar*/
+.topnav input[type=text]{
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: #767680;
+    border: none;
+    border-radius: 10px;
+    background-image: url("../images/microphone.png"), url("../images/magnifyingglass.png");
+    background-repeat: no-repeat;
+    background-position: 8px, 340px;
+    height: 36px;
+    width: 360px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+/*code for the placeholder text inside the search bar*/
+input::placeholder{
+    text-indent: 30px;
+}
+/*Filter title code*/
+#title_Filters{
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0px;
+    margin-top: 10.57px;
+}
+/*had to separate the menu within a different div to apply the correct spacing*/
+#menu-container{
+    margin-top: 35px;
+}
+/*Apply Filter button*/
+.apply{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 60px;
+    gap: 10px;
+    width: 167px;
+    height: 48px;
+    color: white;
+    border: none;
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+    background: #7836F1;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 113px;
+    
+}
+/*line that separate the menu*/
+hr{
+    margin: 0px;
+}
+
+.drop-wrapper-Availability{
+    /*position: absolute;*/
+}
+
+.Availability{
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+    background: #7836F1;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    height: 42px;
+    width: 169.5px;
+    padding: 0;
+}
+
+.levels{
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+    background: #7836F1;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    height: 42px;
+    width: 133px;
+}
+
+.price{
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+    background: #7836F1;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    height: 42px;
+    width: 133px;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+    border: black;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*toggle switch dot*/
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background-color: white;
+    border: black;
+}
+
+input:checked + .slider {
+    background-color: #66E4D3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #66E4D3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*star rating system CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    width: auto;
+    padding: 0 10px;
+    margin-left: 115px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★';
+    font-size: 42px;
+}
+.rate > input:checked ~ label {
+    color: #7836F1;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #7836F1;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #7836F1;
+}
+
+.DC-toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+.GBT-toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+.CHAdeMO-toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+.CCS-toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+.type-toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+.Chargepoint-toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+.EV-toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+.Electrify-toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+.Tesla-toggle{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 50px;
+}
+
+.filter-titles{
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.sections_button_holder{
+    width: 394px;
+    height: 42px;
+}
+
+#cancel-toggle{
+    background: none;
+    border: none;
+    color: #7836F1;
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10.57px;
+}
+
+#top-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#title_Filters{
+    margin-left: 5px;
+}
+
+.sections_button_holder > button{
+    background-color: #E4E3EE;
+    text-align: left;
+    border: none;
+    background-image: url("../images/Vector.png");
+    background-repeat: no-repeat;
+    background-position: 337px;
+    font-family: 'Kumbh Sans';
+    font-size: 17px;
+    text-indent: 15px;
+    color: #343434;
+    cursor: pointer;
+    height: 44px;
+    width: 394px;
+    
+}
+
+#availability_panel{
+    position: absolute;
+    height: 0px;
+    width: 393px;
+    top: 60px;
+
+    background: white;
+    overflow: hidden;
+    z-index: 10000;
+    transition: height 0.3s, linear .1s;;
+}
