@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/filterteststyle.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="searchDiv">
+        <div class="searchTitle">
+            <h2> Filters</h2>
+            <p><a href="/main.html"> Cancel</a></p>
+        </div>
+        <div class="search-box">
+            <input type="search" placeholder="Search">
+            <button class="searchbtn"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Charging Level
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="segmented-picker ios15">
+                        <input type="radio" id="level-1" name="level" checked>
+                        <label for="level-1">Level 1</label>
+                        <input type="radio" id="level-2" name="level">
+                        <label for="level-2">Level 2</label>
+                        <input type="radio" id="level-3" name="level">
+                        <label for="level-3">Level 3</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Pricing
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="segmented-picker ios15">
+                        <input type="radio" id="level-4" name="level" checked>
+                        <label for="level-4">Level 1</label>
+                        <input type="radio" id="level-5" name="level">
+                        <label for="level-5">Level 2</label>
+                        <input type="radio" id="level-6" name="level">
+                        <label for="level-6">Level 3</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Plug Type
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="plug-container">
+                        <div class="row">
+                            <div class="col">
+                                <img src="images/Plug1.png" alt="image" width="55" height="55">
+                            </div>
+                            <div class="col typeText">DC CCS</div>
+                            <div class="col togAli"><label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img src="images/Plug2.png" alt="image" width="55" height="55">
+                            </div>
+                            <div class="col typeText">GB/T</div>
+                            <div class="col togAli"><label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img src="images/Plug3.png" alt="image" width="55" height="55">
+                            </div>
+                            <div class="col typeText">CHAdeMO</div>
+                            <div class="col togAli"><label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img src="images/Plug4.png" alt="image" width="55" height="55">
+                            </div>
+                            <div class="col typeText">CCS Type 1</div>
+                            <div class="col togAli">
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <img src="images/plug5.png" alt="image" width="55" height="55">
+                            </div>
+                            <div class="col typeText">Type 2</div>
+                            <div class="col togAli"><label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Network
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="plug-container">
+                        <div class="row">
+                            <div class="col typeText">Chargepoint</div>
+                            <div class="col togAli"><label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col typeText">EV Connect</div>
+                            <div class="col togAli"><label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col typeText">Electrify America</div>
+                            <div class="col togAli"><label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col typeText">Tesla</div>
+                            <div class="col togAli"><label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col typeText">Plug Share</div>
+                            <div class="col togAli"><label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Minimum Rating
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars" name="rating" value="5" />
+                        <label for="5-stars" class="star">&#9733;</label>
+                        <input type="radio" id="4-stars" name="rating" value="4" />
+                        <label for="4-stars" class="star">&#9733;</label>
+                        <input type="radio" id="3-stars" name="rating" value="3" />
+                        <label for="3-stars" class="star">&#9733;</label>
+                        <input type="radio" id="2-stars" name="rating" value="2" />
+                        <label for="2-stars" class="star">&#9733;</label>
+                        <input type="radio" id="1-star" name="rating" value="1" />
+                        <label for="1-star" class="star">&#9733;</label>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- apply button -->
+            <div class="filterApply">
+                <a href="index.html"><button class="filterBtn">Apply</button></a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>
